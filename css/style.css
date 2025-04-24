@@ -26,10 +26,8 @@ h2{
     text-align: center;
     margin-top: 40px;
     font-family: "Playfair Display", serif;
+    color:rgb(73,33,33);
 }
- .NoviProizvodi h2{
-    color: rgb(73, 33, 33);
- }
 h1{
     font-family: "Raleway", sans-serif;
 }
@@ -72,7 +70,77 @@ margin:0px auto;
     border-radius: 20px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.44);
 }
+.Bestseller{
+    position: relative;
+    background-color: rgb(169, 203, 184);
+    width:70%;
+    padding: 30px;
+    border-radius:20px ;
+    margin:40px auto;
+    box-shadow: 0px 15px 10px rgba(40, 25, 25, 0.44);
+}
+.grid-bestseller{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 1000px;
+   justify-content: center;
+    padding-left: 40px;
+}
+.Bestseller img{
+    width:100%;
+  height: auto;
+    border-radius: 30px;
+    box-shadow: 0px 15px 10px rgba(40, 25, 25, 0.44);
+    border: solid 3px rgb(81, 52, 19);
+    margin-bottom: 20px;
+}
+.bestseller-content{
+    text-align: left;
+  margin: 20px auto;
+  padding: 20px;
+}
+.bestseller-content h4{
+    text-align: center;
+}
+.sastojci{
+    list-style: none;
+}
+.cena{
+    font-size:20px;
+    font-weight:bold;
+margin-top:20px;
+margin-bottom:20px;
+color:rgb(124, 36, 58)
+}
+.stiker{
+    position: absolute;
+    top:10px;
+    left:100px;
+    color: rgb(245, 241, 241);
+    background-color: rgba(144, 15, 15, 0.753);
+    padding:10px;
+    border-radius: 9px;
+    font-size:15px;
+    letter-spacing: 1px;
+    transform-origin:top center;
+    animation: pulse 2s infinite ease-in-out;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+        
+    }
+    100% {
+        transform: scale(1);
+    }
 
-
-
-
+}
+.alergeni{
+    border-top: solid 2px rgb(57, 53, 53);
+    padding: 10px;
+    font-size:small;
+}
