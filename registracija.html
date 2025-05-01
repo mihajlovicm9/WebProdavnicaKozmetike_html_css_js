@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1467ed06b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/registracija.css">
+    <title>Registracija</title>
+</head>
+<body>
+    <section class="registracija-section">
+        <h2>Kreiraj nalog</h2>
+        <div class="form-container">
+            <form>
+                <div class="input-group">
+                <i class="fa-solid fa-circle-user"></i>
+                <input type="text" name="ime/prezime" placeholder="Ime i Prezime" required><br>
+                </div><div class="input-group">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" placeholder="Email" required><br>
+                </div><div class="input-group">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="lozinka" placeholder="Lozinka" required><br>
+                </div><div class="input-group">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="potvrdi_lozinku" placeholder="Ponovo unesi lozinku" required><br>
+                </div><div class="input-group">
+                <i class="fa-solid fa-phone"></i>
+                <input type="text" name="telefon" placeholder="Unesite svoj broj telefona"><br>
+                </div><div class="input-group">
+                <i class="fa-solid fa-house"></i>
+                <input type="text" name="adresa" placeholder="Unesite svoju adresu"><br>
+                </div><div class="input-group">
+                <i class="fa-solid fa-calendar"></i>
+                <input type="date" name="datum_rodjenja" placeholder="Unesite datum rođenja"><br>
+                </div><div class="input-group">
+                <i class="fa-solid fa-person-half-dress"></i>
+<select name="pol" required>
+    <option value="Odaberite pol" selected disabled>Odaberite pol</option>
+    <option value="ženski">Ženski</option>
+    <option value="muški">Muški</option>
+</select><br>
+</div>
+<input type="submit" class="dugme-za-registraciju" value="Registruj se">
+
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

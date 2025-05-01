@@ -1,0 +1,64 @@
+
+body{
+    background-image: url(../img/pozadina15.webp);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.registracija-section{
+    background-color: rgba(123, 148, 88, 0.705);
+    padding: 30px;
+    margin:70px auto;
+    border-radius: 20px;
+    max-width: 500px;
+    box-shadow: 0px 5px 10px rgb(131, 126, 126);
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(38, 25, 23);
+}
+.input-group{
+    display:flex;/*da bi ikona i polje bili u istom redu*/
+    align-items: center;
+    padding:10px;
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+margin: 10px;
+}
+.input-group i{
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.input-group input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;/*posto sam podesila da imaju iste boje i input group i samo polje problem je kada korsnik klikne skroz desno, pa zato umesto 60% ovde pisem 100%*/
+}
+
+.input-group input:focus{/*kad kliknem na njega*/
+outline: none;/*obe linije sluze da ne bih imala okvir kada kliknem da unesem ime*/
+border: none;
+}
+.input-group select{
+    width: 100%;
+padding: 20px;
+border: none;
+}
+.dugme-za-registraciju{
+    display:block;/*da ne bi nista stajalo ni levo ni desno od naseg dugmeta*/
+   margin-left: auto;/*da pomerim dugme skroz desno, da sam htela sredinu bilo bi 20px auto*/
+   padding:10px 20px;/*jer je dugme premalo*/
+   border:none;
+   border-radius: 5px;
+  background-image: linear-gradient(to right,rgb(221, 178, 130),rgb(117, 107, 105));
+  color: rgb(19, 13, 2);
+  font-size:20px;
+}
+.dugme-za-registraciju:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right,rgb(117, 107, 105),rgb(221, 178, 130));
+    transform: translateY(2px);
+    color: rgb(101, 68, 53);
+}
